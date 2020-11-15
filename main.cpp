@@ -9,7 +9,7 @@
 using namespace std ;
 
 int main(int argc, char const *argv[]){
-    particle S(1,2,3,10);
-    cout<<S<<endl ;
+    box Universe;
+    cout<<Universe<<endl ;
     return 0;
 }

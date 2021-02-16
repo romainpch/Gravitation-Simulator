@@ -18,11 +18,12 @@ public :
 
 
     box(int level = 0, vect center = vect(0,0,0), vect massCenter = vect(0,0,0), double mass = 0, particle * star = nullptr, box * sisterBox = nullptr, box * daughterBox = nullptr) : level_(level), center_(center), massCenter_(massCenter),mass_(mass), star_(star), sisterBox_(sisterBox), daughterBox_(daughterBox) {};
-    ~box(){} ;
+    ~box() ;
 
-    void updatemass(double m) ;
+    double getsize() ;
 
     void split() ;
+    void delete_recurs() ;
     box * whichbox(particle * P) ;
 
     void add_particle(particle *P) ;
